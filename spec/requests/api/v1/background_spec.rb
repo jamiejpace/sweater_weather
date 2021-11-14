@@ -16,4 +16,11 @@ RSpec.describe 'background endpoint' do
     expect(background[:data]).to have_key(:attributes)
     expect(background[:data][:attributes]).to be_a(Hash)
   end
+
+  it 'renders a 400 if no location given' do
+    get '/api/v1/backgrounds'
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+  end
 end
