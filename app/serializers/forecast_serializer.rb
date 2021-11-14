@@ -1,5 +1,5 @@
 class ForecastSerializer
-  def self.new (forecast)
+  def self.new(forecast)
     {
       "data": {
         "id": nil,
