@@ -5,6 +5,7 @@ class OpenWeatherService
         req.params['lat'] = latitude
         req.params['lon'] = longitude
         req.params['units'] = "imperial"
+        req.params['exclude'] = "minutely"
       end
       body = parse_json(response)
     end
