@@ -6,11 +6,11 @@ RSpec.describe BackgroundImage do
       user: {
         location: "Denver, CO",
         name: "Sally Rooney"
-        },
+      },
       urls: {
         full: "http://website.com.20923.jpeg"
-        }
       }
+    }
 
     background = BackgroundImage.new(data)
 
