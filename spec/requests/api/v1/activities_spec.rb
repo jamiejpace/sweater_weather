@@ -21,4 +21,10 @@ RSpec.describe 'activities endpoint' do
     expect(response).to_not be_successful
     expect(response.status).to eq(400)
   end
+
+  it 'returns an error if the location does not exist' do
+    get '/api/v1/activities', params: {destination: "....."}
+
+    expect(response).to_not be_successful
+  end
 end
