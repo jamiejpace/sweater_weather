@@ -9,7 +9,7 @@ class BoredFacade
               else
                 BoredService.activity_data("cooking")
               end
-             
+      [Activity.new(data1), Activity.new(data2)]
     end
   end
 end
