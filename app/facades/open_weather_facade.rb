@@ -5,8 +5,10 @@ class OpenWeatherFacade
       Forecast.new(data)
     end
 
-    def get_future_weather(latitude, longitude, time)
-      data = OpenWeatherService.weather_data(latitude, longitude)
+    def get_future_weather(coordinates, time)
+      data = OpenWeatherService.weather_data(coordinates.latitude, coordinates.longitude)
+      forecast = Forecast.new(data)
+      forecast.hourly[time]
     end
   end
 end
