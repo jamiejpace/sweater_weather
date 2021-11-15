@@ -5,7 +5,7 @@ class Api::V1::RoadTripController < ApplicationController
     trip_time = MapQuestFacade.get_route_data(params[:origin], params[:destination])
     coordinates = MapQuestFacade.get_location(params[:destination])
     arrival_weather = OpenWeatherFacade.get_future_weather(coordinates, number_of_hours(trip_time))
-    render json: RoadTripSerializer.new(origin_and_destination, arrival_weather), status: 200
+    render json: RoadTripSerializer.new(origin_and_destination, trip_time, arrival_weather), status: 200
   end
 
   private
