@@ -12,6 +12,12 @@ RSpec.describe 'create user endpoint' do
   
     expect(response).to be_successful
     expect(response.status).to eq(201)
+
+    user = JSON.parse(response.body, symbolize_names: true)
+
+    expect(user).to have_key(:data)
+    expect(user[:data]).to be_a(Hash)
+    expect(user[:data][:type]).to eq("users")
   end
 
   it 'it returns an error if email address already exists for a user' do
