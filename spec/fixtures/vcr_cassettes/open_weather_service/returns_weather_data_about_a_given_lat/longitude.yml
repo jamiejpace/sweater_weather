@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 15 Nov 2021 19:50:37 GMT
+      - Mon, 15 Nov 2021 19:50:40 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -96,5 +96,5 @@ http_interactions:
         rain","icon":"10d"}],"clouds":99,"pop":0.35,"rain":0.13,"uvi":3},{"dt":1637517600,"sunrise":1637502708,"sunset":1637538022,"moonrise":1637543700,"moonset":1637510580,"moon_phase":0.57,"temp":{"day":51.42,"min":37.67,"max":57.54,"night":45.97,"eve":52.83,"morn":37.67},"feels_like":{"day":47.39,"night":44.73,"eve":48.99,"morn":33.17},"pressure":1017,"humidity":24,"dew_point":15.49,"wind_speed":11.59,"wind_deg":320,"wind_gust":26.84,"weather":[{"id":802,"main":"Clouds","description":"scattered
         clouds","icon":"03d"}],"clouds":48,"pop":0,"uvi":3},{"dt":1637604000,"sunrise":1637589175,"sunset":1637624388,"moonrise":1637633040,"moonset":1637600280,"moon_phase":0.6,"temp":{"day":53.56,"min":42.26,"max":59.77,"night":47.97,"eve":54.81,"morn":42.26},"feels_like":{"day":50.07,"night":46.08,"eve":51.44,"morn":39.49},"pressure":1019,"humidity":31,"dew_point":23.45,"wind_speed":4.61,"wind_deg":204,"wind_gust":6.76,"weather":[{"id":803,"main":"Clouds","description":"broken
         clouds","icon":"04d"}],"clouds":69,"pop":0,"uvi":3}]}'
-  recorded_at: Mon, 15 Nov 2021 19:50:37 GMT
+  recorded_at: Mon, 15 Nov 2021 19:50:41 GMT
 recorded_with: VCR 6.0.0
