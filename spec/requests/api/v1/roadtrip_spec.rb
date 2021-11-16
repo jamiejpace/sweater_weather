@@ -12,6 +12,15 @@ RSpec.describe 'roadtrip endpoint', :vcr do
     post '/api/v1/road_trip', params: body
 
     expect(response).to be_successful
+    expect(response.status).to eq(200)
+
+    roadtrip = JSON.parse(response.body, symbolize_names: true)
+
+    expect(roadtrip).to be_a(Hash)
+    expect(roadtrip).to have_key(:data)
+    expect(roadtrip[:data]).to have_key(:id)
+    expect(roadtrip[:data]).to have_key(:type)
+    expect(roadtrip[:data]).to have_key(:attributes)
   end
 
   it 'returns a travel time of impossible if no route exists' do
