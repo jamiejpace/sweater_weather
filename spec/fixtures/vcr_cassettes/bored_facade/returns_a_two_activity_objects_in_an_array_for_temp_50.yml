@@ -31,17 +31,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '130'
+      - '141'
       Etag:
-      - W/"82-dKp43Rb2JPiAVKSeHmz06wYkdC4"
+      - W/"8d-sfUbW7aUsW1wujXpu8HPUQYI+/4"
       Date:
-      - Tue, 16 Nov 2021 16:28:44 GMT
+      - Tue, 16 Nov 2021 16:44:27 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Make bread from scratch","type":"cooking","participants":1,"price":0.2,"link":"","key":"4809815","accessibility":0.2}'
-  recorded_at: Tue, 16 Nov 2021 16:28:45 GMT
+      string: '{"activity":"Create a meal plan for the coming week","type":"cooking","participants":1,"price":0,"link":"","key":"3491470","accessibility":0}'
+  recorded_at: Tue, 16 Nov 2021 16:44:27 GMT
 - request:
     method: get
     uri: http://www.boredapi.com/api/activity?type=relaxation
@@ -73,15 +73,16 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '146'
+      - '176'
       Etag:
-      - W/"92-o1nHW9IIbdYAQ40ifimKzrSNwMA"
+      - W/"b0-C8DYF7+R5fyRxja8MMZJ+ho+xyA"
       Date:
-      - Tue, 16 Nov 2021 16:28:46 GMT
+      - Tue, 16 Nov 2021 16:44:31 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Do something you used to do as a kid","type":"relaxation","participants":1,"price":0.1,"link":"","key":"8827573","accessibility":0.8}'
-  recorded_at: Tue, 16 Nov 2021 16:28:47 GMT
+      string: '{"activity":"Sit in the dark and listen to your favorite music with
+        no distractions","type":"relaxation","participants":1,"price":0,"link":"","key":"9908721","accessibility":1}'
+  recorded_at: Tue, 16 Nov 2021 16:44:31 GMT
 recorded_with: VCR 6.0.0

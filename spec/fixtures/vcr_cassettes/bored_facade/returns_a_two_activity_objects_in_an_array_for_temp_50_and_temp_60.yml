@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.boredapi.com/api/activity?type=cooking
+    uri: http://www.boredapi.com/api/activity?type=busywork
     body:
       encoding: US-ASCII
       string: ''
@@ -31,17 +31,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '130'
+      - '124'
       Etag:
-      - W/"82-dKp43Rb2JPiAVKSeHmz06wYkdC4"
+      - W/"7c-hJbVzStfklbhsyjLt7MIdSiCvhU"
       Date:
-      - Tue, 16 Nov 2021 16:28:44 GMT
+      - Tue, 16 Nov 2021 16:45:21 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Make bread from scratch","type":"cooking","participants":1,"price":0.2,"link":"","key":"4809815","accessibility":0.2}'
-  recorded_at: Tue, 16 Nov 2021 16:28:45 GMT
+      string: '{"activity":"Organize a bookshelf","type":"busywork","participants":1,"price":0,"link":"","key":"6098037","accessibility":0}'
+  recorded_at: Tue, 16 Nov 2021 16:45:21 GMT
 - request:
     method: get
     uri: http://www.boredapi.com/api/activity?type=relaxation
@@ -73,15 +73,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '146'
+      - '113'
       Etag:
-      - W/"92-o1nHW9IIbdYAQ40ifimKzrSNwMA"
+      - W/"71-jm9Gjhho3eI9rd4kCp2sekw1VE0"
       Date:
-      - Tue, 16 Nov 2021 16:28:46 GMT
+      - Tue, 16 Nov 2021 16:45:24 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Do something you used to do as a kid","type":"relaxation","participants":1,"price":0.1,"link":"","key":"8827573","accessibility":0.8}'
-  recorded_at: Tue, 16 Nov 2021 16:28:47 GMT
+      string: '{"activity":"Color","type":"relaxation","participants":1,"price":0.1,"link":"","key":"5322987","accessibility":0}'
+  recorded_at: Tue, 16 Nov 2021 16:45:24 GMT
 recorded_with: VCR 6.0.0

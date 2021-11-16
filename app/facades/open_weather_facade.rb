@@ -10,7 +10,14 @@ class OpenWeatherFacade
       hourly_forecasts = data[:hourly].map do |hour|
         HourlyForecast.new(hour)
       end
-      hourly_forecasts[time]
+      hours = number_of_hours(time)
+      hourly_forecasts[hours]
+    end
+
+    private
+
+    def number_of_hours(time)
+      time.split(':').first.to_i
     end
   end
 end
