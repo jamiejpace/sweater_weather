@@ -7,7 +7,7 @@ class Api::V1::RoadTripController < ApplicationController
     trip_time = MapQuestFacade.get_route_data(origin, destination)
     if trip_time
       coordinates = MapQuestFacade.get_location(destination)
-      arrival_weather = OpenWeatherFacade.get_future_weather(coordinates, number_of_hours(trip_time))
+      arrival_weather = OpenWeatherFacade.get_future_weather(coordinates, trip_time)
       render json: RoadTripSerializer.new(origin, destination, trip_time, arrival_weather), status: 200
     else
       render json: RoadTripSerializer.no_route(origin, destination), status: 200
@@ -22,9 +22,5 @@ class Api::V1::RoadTripController < ApplicationController
 
   def require_valid_key
     render json: { error: "Unauthorized request" }, status: 401 unless valid_key
-  end
-
-  def number_of_hours(time)
-    time.split(':').first.to_i
   end
 end
