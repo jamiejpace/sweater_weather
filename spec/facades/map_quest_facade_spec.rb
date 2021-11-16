@@ -8,4 +8,10 @@ RSpec.describe 'map quest facade', :vcr do
     expect(response.latitude).to be_a(Float)
     expect(response.longitude).to be_a(Float)
   end
+
+  it 'returns a route time' do
+    response = MapQuestFacade.get_route_data("Denver, CO", "Chicago, IL")
+
+    expect(response).to be_a(String)
+  end
 end
