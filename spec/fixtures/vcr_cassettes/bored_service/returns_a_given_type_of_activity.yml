@@ -31,15 +31,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '151'
+      - '152'
       Etag:
-      - W/"97-CsGa20MxrZT4byYDsl3YkQoOfcQ"
+      - W/"98-8+LAhZ6uX6bj9Q8cf+o37fiegDE"
       Date:
-      - Mon, 15 Nov 2021 17:42:13 GMT
+      - Tue, 16 Nov 2021 02:51:12 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Shop at support your local farmers market","type":"relaxation","participants":1,"price":0.2,"link":"","key":"8979931","accessibility":0.1}'
-  recorded_at: Mon, 15 Nov 2021 17:42:14 GMT
+      string: '{"activity":"Give your pet ten minutes of focused attention","type":"relaxation","participants":1,"price":0,"link":"","key":"9937387","accessibility":0}'
+  recorded_at: Tue, 16 Nov 2021 02:51:12 GMT
 recorded_with: VCR 6.0.0

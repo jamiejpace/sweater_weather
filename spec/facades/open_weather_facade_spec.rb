@@ -5,8 +5,8 @@ RSpec.describe 'open weather facade', :vcr do
     response = OpenWeatherFacade.get_weather(39.738453, -104.984853)
 
     expect(response).to be_a(Forecast)
-    expect(response.current).to be_a(Hash)
-    expect(response.daily).to be_a(Array)
-    expect(response.hourly).to be_a(Array)
+    expect(response.current).to be_a(CurrentForecast)
+    expect(response.daily.first).to be_a(DailyForecast)
+    expect(response.hourly.first).to be_a(HourlyForecast)
   end
 end
