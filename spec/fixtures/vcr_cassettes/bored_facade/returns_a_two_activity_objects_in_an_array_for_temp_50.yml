@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.boredapi.com/api/activity?type=cooking
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '141'
+      Etag:
+      - W/"8d-sfUbW7aUsW1wujXpu8HPUQYI+/4"
+      Date:
+      - Tue, 16 Nov 2021 16:44:27 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"activity":"Create a meal plan for the coming week","type":"cooking","participants":1,"price":0,"link":"","key":"3491470","accessibility":0}'
+  recorded_at: Tue, 16 Nov 2021 16:44:27 GMT
+- request:
+    method: get
+    uri: http://www.boredapi.com/api/activity?type=relaxation
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '176'
+      Etag:
+      - W/"b0-C8DYF7+R5fyRxja8MMZJ+ho+xyA"
+      Date:
+      - Tue, 16 Nov 2021 16:44:31 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"activity":"Sit in the dark and listen to your favorite music with
+        no distractions","type":"relaxation","participants":1,"price":0,"link":"","key":"9908721","accessibility":1}'
+  recorded_at: Tue, 16 Nov 2021 16:44:31 GMT
+recorded_with: VCR 6.0.0

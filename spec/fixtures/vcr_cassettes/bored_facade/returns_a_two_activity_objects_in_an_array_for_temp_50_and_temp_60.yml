@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.boredapi.com/api/activity?type=busywork
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '124'
+      Etag:
+      - W/"7c-hJbVzStfklbhsyjLt7MIdSiCvhU"
+      Date:
+      - Tue, 16 Nov 2021 16:45:21 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"activity":"Organize a bookshelf","type":"busywork","participants":1,"price":0,"link":"","key":"6098037","accessibility":0}'
+  recorded_at: Tue, 16 Nov 2021 16:45:21 GMT
+- request:
+    method: get
+    uri: http://www.boredapi.com/api/activity?type=relaxation
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '113'
+      Etag:
+      - W/"71-jm9Gjhho3eI9rd4kCp2sekw1VE0"
+      Date:
+      - Tue, 16 Nov 2021 16:45:24 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"activity":"Color","type":"relaxation","participants":1,"price":0.1,"link":"","key":"5322987","accessibility":0}'
+  recorded_at: Tue, 16 Nov 2021 16:45:24 GMT
+recorded_with: VCR 6.0.0
