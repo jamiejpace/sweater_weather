@@ -35,13 +35,13 @@ http_interactions:
       Etag:
       - W/"82-dKp43Rb2JPiAVKSeHmz06wYkdC4"
       Date:
-      - Mon, 15 Nov 2021 17:45:52 GMT
+      - Tue, 16 Nov 2021 02:50:55 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"activity":"Make bread from scratch","type":"cooking","participants":1,"price":0.2,"link":"","key":"4809815","accessibility":0.2}'
-  recorded_at: Mon, 15 Nov 2021 17:45:52 GMT
+  recorded_at: Tue, 16 Nov 2021 02:50:55 GMT
 - request:
     method: get
     uri: http://www.boredapi.com/api/activity?type=relaxation
@@ -73,15 +73,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '121'
+      - '131'
       Etag:
-      - W/"79-jpBvPDLoPbwhn6nUVvAtod3K48o"
+      - W/"83-Az/kf3ob+0N5SdkPveys2ykcbas"
       Date:
-      - Mon, 15 Nov 2021 17:45:54 GMT
+      - Tue, 16 Nov 2021 02:50:58 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Go stargazing","type":"relaxation","participants":1,"price":0,"link":"","key":"8832605","accessibility":0.1}'
-  recorded_at: Mon, 15 Nov 2021 17:45:54 GMT
+      string: '{"activity":"Take your dog on a walk","type":"relaxation","participants":1,"price":0,"link":"","key":"9318514","accessibility":0.2}'
+  recorded_at: Tue, 16 Nov 2021 02:50:58 GMT
 recorded_with: VCR 6.0.0

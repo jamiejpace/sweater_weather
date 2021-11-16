@@ -7,7 +7,7 @@ RSpec.describe 'forecast endpoint', :vcr do
     expect(response).to be_successful
 
     weather = JSON.parse(response.body, symbolize_names: true)
-  
+    
     expect(weather).to be_a(Hash)
     expect(weather).to have_key(:data)
     expect(weather[:data]).to be_a(Hash)
@@ -36,7 +36,7 @@ RSpec.describe 'forecast endpoint', :vcr do
     expect(weather[:data][:attributes][:current_weather]).to have_key(:humidity)
     expect(weather[:data][:attributes][:current_weather][:humidity]).to be_a(Integer)
     expect(weather[:data][:attributes][:current_weather]).to have_key(:uvi)
-    expect(weather[:data][:attributes][:current_weather][:uvi]).to be_a(Float)
+    expect(weather[:data][:attributes][:current_weather][:uvi].to_f).to be_a(Float)
     expect(weather[:data][:attributes][:current_weather]).to have_key(:visibility)
     expect(weather[:data][:attributes][:current_weather][:visibility]).to be_a(Integer)
     expect(weather[:data][:attributes][:current_weather]).to have_key(:conditions)

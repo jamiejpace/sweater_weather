@@ -7,8 +7,10 @@ class OpenWeatherFacade
 
     def get_future_weather(coordinates, time)
       data = OpenWeatherService.weather_data(coordinates.latitude, coordinates.longitude)
-      forecast = Forecast.new(data)
-      forecast.hourly[time]
+      hourly_forecasts = data[:hourly].map do |hour|
+        HourlyForecast.new(hour)
+      end
+      hourly_forecasts[time]
     end
   end
 end

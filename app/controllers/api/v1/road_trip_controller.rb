@@ -2,10 +2,16 @@ class Api::V1::RoadTripController < ApplicationController
   before_action :require_valid_key
 
   def create
-    trip_time = MapQuestFacade.get_route_data(params[:origin], params[:destination])
-    coordinates = MapQuestFacade.get_location(params[:destination])
-    arrival_weather = OpenWeatherFacade.get_future_weather(coordinates, number_of_hours(trip_time))
-    render json: RoadTripSerializer.new(origin_and_destination, trip_time, arrival_weather), status: 200
+    origin = params[:origin]
+    destination = params[:destination]
+    trip_time = MapQuestFacade.get_route_data(origin, destination)
+    if trip_time
+      coordinates = MapQuestFacade.get_location(destination)
+      arrival_weather = OpenWeatherFacade.get_future_weather(coordinates, number_of_hours(trip_time))
+      render json: RoadTripSerializer.new(origin, destination, trip_time, arrival_weather), status: 200
+    else
+      render json: RoadTripSerializer.no_route(origin, destination), status: 200
+    end
   end
 
   private
@@ -20,12 +26,5 @@ class Api::V1::RoadTripController < ApplicationController
 
   def number_of_hours(time)
     time.split(':').first.to_i
-  end
-
-  def origin_and_destination
-    {
-      origin: params[:origin],
-      destination: params[:destination]
-    }
   end
 end

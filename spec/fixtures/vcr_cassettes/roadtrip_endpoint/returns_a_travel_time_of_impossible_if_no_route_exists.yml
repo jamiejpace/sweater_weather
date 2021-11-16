@@ -1,0 +1,105 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/directions/v2/route?from=Denver,CO&key=Private
+      map key&to=London,%20England
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 16 Nov 2021 03:41:37 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '278'
+      Set-Cookie:
+      - JSESSIONID=DA2973F88881CDC46B820C5AD4ADEB69; Path=/directions; HttpOnly
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Tue, 16 Nov 2021 03:41:37 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MiwibWVzc2FnZSI6IiJ9fSwiaW5mbyI6eyJzdGF0dXNjb2RlIjo0MDIsImNvcHlyaWdodCI6eyJpbWFnZUFsdFRleHQiOiLCqSAyMDIxIE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsInRleHQiOiLCqSAyMDIxIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbIldlIGFyZSB1bmFibGUgdG8gcm91dGUgd2l0aCB0aGUgZ2l2ZW4gbG9jYXRpb25zLiJdfX0=
+  recorded_at: Tue, 16 Nov 2021 03:41:37 GMT
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=Private map key&location=London,%20England
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Tue, 16 Nov 2021 03:41:37 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1025'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Tue, 16 Nov 2021 03:41:37 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=76EBAB8BA0559829D62CF7BFA2645197; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"London,
+        England"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"London","adminArea5Type":"City","adminArea4":"Westminster","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"GB","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282415113","unknownInput":"","type":"s","latLng":{"lat":51.507276,"lng":-0.12766},"displayLatLng":{"lat":51.507276,"lng":-0.12766},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=Private
+        map key&type=map&size=225,160&locations=51.507276,-0.12766|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1162856129"}]}]}'
+  recorded_at: Tue, 16 Nov 2021 03:41:37 GMT
+recorded_with: VCR 6.0.0
