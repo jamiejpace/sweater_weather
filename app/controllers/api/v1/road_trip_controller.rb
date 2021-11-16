@@ -1,10 +1,8 @@
 class Api::V1::RoadTripController < ApplicationController
   before_action :require_valid_key
+  before_action :require_origin_and_destination
 
   def create
-    origin = params[:origin]
-    destination = params[:destination]
-    trip_time = MapQuestFacade.get_route_data(origin, destination)
     if trip_time
       coordinates = MapQuestFacade.get_location(destination)
       arrival_weather = OpenWeatherFacade.get_future_weather(coordinates, trip_time)
@@ -15,6 +13,22 @@ class Api::V1::RoadTripController < ApplicationController
   end
 
   private
+
+  def trip_time
+    trip_time = MapQuestFacade.get_route_data(origin, destination)
+  end
+
+  def require_origin_and_destination
+    render json: { error: "bad request" }, status: :bad_request unless origin && destination
+  end
+
+  def origin
+    params[:origin]
+  end
+
+  def destination
+    params[:destination]
+  end
 
   def valid_key
     User.find_by(access_token: params[:api_key])

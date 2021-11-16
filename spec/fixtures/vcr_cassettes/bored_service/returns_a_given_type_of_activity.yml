@@ -31,15 +31,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '152'
+      - '128'
       Etag:
-      - W/"98-8+LAhZ6uX6bj9Q8cf+o37fiegDE"
+      - W/"80-1fmB+ULWB/HhPc7HFw1K2brndQ0"
       Date:
-      - Tue, 16 Nov 2021 02:51:12 GMT
+      - Tue, 16 Nov 2021 16:29:03 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"activity":"Give your pet ten minutes of focused attention","type":"relaxation","participants":1,"price":0,"link":"","key":"9937387","accessibility":0}'
-  recorded_at: Tue, 16 Nov 2021 02:51:12 GMT
+      string: '{"activity":"Go to a nail salon","type":"relaxation","participants":1,"price":0.4,"link":"","key":"7526324","accessibility":0.5}'
+  recorded_at: Tue, 16 Nov 2021 16:29:04 GMT
 recorded_with: VCR 6.0.0

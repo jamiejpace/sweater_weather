@@ -33,4 +33,17 @@ RSpec.describe 'roadtrip endpoint', :vcr do
     expect(roadtrip[:data]).to have_key(:attributes)
     expect(roadtrip[:data][:attributes][:travel_time]).to eq("impossible route")
   end
+
+  it 'returns an error if missing a destination or origin' do
+    user1 = User.create(email: "mose25@gmail.com", password_digest: "abc123")
+    body = {
+      "destination": "London, England",
+      "api_key": user1.access_token
+    }
+
+    post '/api/v1/road_trip', params: body
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+  end
 end
