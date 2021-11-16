@@ -42,5 +42,4 @@ RSpec.describe 'roadtrip serializer', :vcr do
     expect(roadtrip_json[:data][:attributes][:travel_time]).to eq("impossible route")
     expect(roadtrip_json[:data][:attributes]).to_not have_key(:weather_at_eta)
   end
-
 end
