@@ -34,7 +34,7 @@ Sweather Weather is a backend application that exposes several external API's to
   <img src="https://img.shields.io/badge/Git-F05032.svg?&style=flaste&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-181717.svg?&style=flaste&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Postman-FF6E4F.svg?&style=flat&logo=postman&logoColor=white" />
-  <img src= "https://img.shields.io/badge/circleci-343434?style=for-the-badge&logo=circleci&logoColor=white" />
+  <img src="https://img.shields.io/badge/CircleCI-FFBC4F.svg?&style=flat&logo=travis&logoColor=white" />
 </p>
 
 #### Gems
